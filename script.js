@@ -135,3 +135,18 @@ card.style.display = "none";
 });
 
 });
+document.querySelectorAll(".featured-card").forEach(card=>{
+
+card.addEventListener("click",()=>{
+
+card.animate([
+{transform:"scale(1)"},
+{transform:"scale(1.05)"},
+{transform:"scale(1)"}
+],{
+duration:300
+});
+
+});
+
+});
