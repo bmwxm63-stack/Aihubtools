@@ -280,3 +280,35 @@ font-weight:600;
 letter-spacing:.5px;
 
                           }
+.categories{
+padding:40px 8%;
+text-align:center;
+}
+
+.categories h2{
+margin-bottom:25px;
+font-size:32px;
+}
+
+.category-container{
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:15px;
+}
+
+.category{
+padding:14px 22px;
+border:none;
+border-radius:50px;
+background:#1f6feb;
+color:white;
+cursor:pointer;
+transition:.3s;
+font-size:15px;
+}
+
+.category:hover{
+transform:translateY(-5px);
+background:#58a6ff;
+  }
