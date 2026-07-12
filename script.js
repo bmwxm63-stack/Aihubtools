@@ -37,3 +37,44 @@ document.querySelectorAll("button").forEach((btn) => {
 window.onload = () => {
   document.body.style.opacity = "1";
 };
+// Theme Toggle
+const toggle=document.getElementById("themeToggle");
+
+toggle.onclick=()=>{
+document.body.classList.toggle("light");
+
+toggle.textContent=
+document.body.classList.contains("light")
+?"☀":"🌙";
+};
+
+// Fade Animation
+document.querySelectorAll(".card").forEach(card=>{
+card.classList.add("fade");
+});
+
+// Back To Top
+const topBtn=document.getElementById("topBtn");
+
+window.onscroll=()=>{
+
+if(window.scrollY>300){
+
+topBtn.style.display="block";
+
+}else{
+
+topBtn.style.display="none";
+
+}
+
+};
+
+topBtn.onclick=()=>{
+
+window.scrollTo({
+top:0,
+behavior:"smooth"
+});
+
+};
