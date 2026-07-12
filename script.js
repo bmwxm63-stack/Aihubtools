@@ -184,3 +184,18 @@ fill:"forwards"
 });
 
 stats.forEach(stat=>observer.observe(stat));
+document.querySelectorAll(".trend-card").forEach(card=>{
+
+card.addEventListener("click",()=>{
+
+card.animate([
+{transform:"scale(1)"},
+{transform:"scale(1.05)"},
+{transform:"scale(1)"}
+],{
+duration:250
+});
+
+});
+
+});
