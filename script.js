@@ -1,47 +1,39 @@
-// AIHubTools - Day 1
-
-const searchBox = document.querySelector("input");
+const search = document.querySelector("input");
 const cards = document.querySelectorAll(".card");
 
-searchBox.addEventListener("keyup", () => {
+search.addEventListener("input", function () {
+  const value = this.value.toLowerCase();
 
-const value = searchBox.value.toLowerCase();
+  cards.forEach((card) => {
+    const title = card.querySelector("h2").textContent.toLowerCase();
 
-cards.forEach(card => {
-
-const title = card.querySelector("h2").innerText.toLowerCase();
-
-if(title.includes(value)){
-card.style.display="block";
-}
-else{
-card.style.display="none";
-}
-
+    if (title.includes(value)) {
+      card.style.display = "block";
+    } else {
+      card.style.display = "none";
+    }
+  });
 });
 
+// Card animation
+cards.forEach((card) => {
+  card.addEventListener("mouseenter", () => {
+    card.style.transform = "translateY(-12px) scale(1.03)";
+  });
+
+  card.addEventListener("mouseleave", () => {
+    card.style.transform = "translateY(0) scale(1)";
+  });
 });
 
-const buttons=document.querySelectorAll("button");
-
-buttons.forEach(btn=>{
-
-btn.addEventListener("mouseenter",()=>{
-
-btn.style.transform="scale(1.08)";
-
+// Button click
+document.querySelectorAll("button").forEach((btn) => {
+  btn.addEventListener("click", () => {
+    alert("Tool page coming in Day 3 🚀");
+  });
 });
 
-btn.addEventListener("mouseleave",()=>{
-
-btn.style.transform="scale(1)";
-
-});
-
-btn.addEventListener("click",()=>{
-
-alert("This page will be added in Day 2 🚀");
-
-});
-
-});
+// Smooth page load
+window.onload = () => {
+  document.body.style.opacity = "1";
+};
