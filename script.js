@@ -78,3 +78,12 @@ behavior:"smooth"
 });
 
 };
+document.querySelectorAll(".card").forEach(card=>{
+
+card.addEventListener("dblclick",()=>{
+
+alert("Tool page coming in Day 5 🚀");
+
+});
+
+});
