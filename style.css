@@ -386,3 +386,34 @@ margin-bottom:20px;
 opacity:0;
 pointer-events:none;
   }
+.stats{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+gap:20px;
+padding:60px 8%;
+text-align:center;
+}
+
+.stat{
+padding:30px;
+background:rgba(255,255,255,.05);
+border:1px solid rgba(255,255,255,.1);
+border-radius:20px;
+backdrop-filter:blur(12px);
+transition:.3s;
+}
+
+.stat:hover{
+transform:translateY(-8px);
+box-shadow:0 0 20px rgba(88,166,255,.3);
+}
+
+.stat h2{
+font-size:42px;
+color:#58a6ff;
+margin-bottom:10px;
+}
+
+.stat p{
+color:#c9d1d9;
+  }
