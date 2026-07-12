@@ -103,7 +103,21 @@ if(filter === "all"){
 card.style.display = "block";
 
 }else{
+document.querySelectorAll(".featured-card").forEach(card=>{
 
+card.addEventListener("click",()=>{
+
+card.animate([
+{transform:"scale(1)"},
+{transform:"scale(1.05)"},
+{transform:"scale(1)"}
+],{
+duration:300
+});
+
+});
+
+});
 if(card.dataset.category === filter){
 
 card.style.display = "block";
