@@ -87,3 +87,4 @@ alert("Tool page coming in Day 5 🚀");
 });
 
 });
+console.log("AIHubTools Day 6 Loaded");
