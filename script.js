@@ -161,3 +161,26 @@ loader.classList.add("loader-hide");
 },1200);
 
 });
+const stats=document.querySelectorAll(".stat h2");
+
+const observer=new IntersectionObserver((entries)=>{
+
+entries.forEach(entry=>{
+
+if(entry.isIntersecting){
+
+entry.target.animate([
+{opacity:0,transform:"translateY(20px)"},
+{opacity:1,transform:"translateY(0)"}
+],{
+duration:700,
+fill:"forwards"
+});
+
+}
+
+});
+
+});
+
+stats.forEach(stat=>observer.observe(stat));
