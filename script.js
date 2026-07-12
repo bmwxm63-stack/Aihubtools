@@ -88,3 +88,36 @@ alert("Tool page coming in Day 5 🚀");
 
 });
 console.log("AIHubTools Day 6 Loaded");
+const filterButtons = document.querySelectorAll(".category");
+
+filterButtons.forEach(button => {
+
+button.addEventListener("click", () => {
+
+const filter = button.dataset.filter;
+
+document.querySelectorAll(".card").forEach(card => {
+
+if(filter === "all"){
+
+card.style.display = "block";
+
+}else{
+
+if(card.dataset.category === filter){
+
+card.style.display = "block";
+
+}else{
+
+card.style.display = "none";
+
+}
+
+}
+
+});
+
+});
+
+});
