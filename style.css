@@ -491,3 +491,17 @@ color:#58a6ff;
 background:#58a6ff;
 color:white;
   }
+.tool-link{
+text-decoration:none;
+color:inherit;
+display:block;
+}
+
+.featured-card{
+cursor:pointer;
+}
+
+.featured-card:hover h3{
+color:#58a6ff;
+transition:.3s;
+  }
