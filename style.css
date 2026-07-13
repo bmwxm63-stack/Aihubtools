@@ -588,3 +588,10 @@ box-shadow:0 8px 20px rgba(88,166,255,.35);
 background:#58a6ff;
 color:white;
 }
+.fav-btn{
+float:right;
+background:none;
+border:none;
+font-size:22px;
+cursor:pointer;
+  }
