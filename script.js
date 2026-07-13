@@ -253,3 +253,18 @@ duration:500
 });
 
 });
+document.querySelectorAll(".card").forEach(card => {
+
+card.addEventListener("click", () => {
+
+card.animate([
+{transform:"scale(1)"},
+{transform:"scale(0.98)"},
+{transform:"scale(1)"}
+],{
+duration:200
+});
+
+});
+
+});
