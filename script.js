@@ -285,3 +285,30 @@ function updateCount() {
 updateCount();
 
 search.addEventListener("keyup", updateCount);
+const filterButtons = document.querySelectorAll(".filter-btn");
+
+filterButtons.forEach(button => {
+
+button.addEventListener("click", () => {
+
+const filter = button.dataset.filter;
+
+document.querySelectorAll(".card").forEach(card => {
+
+if(filter === "all" || card.dataset.category === filter){
+
+card.style.display = "block";
+
+}else{
+
+card.style.display = "none";
+
+}
+
+});
+
+updateCount();
+
+});
+
+});
