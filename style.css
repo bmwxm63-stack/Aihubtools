@@ -514,3 +514,36 @@ outline:none;
 box-shadow:0 0 25px rgba(88,166,255,.5);
 transform:scale(1.02);
   }
+.tool-icon{
+font-size:50px;
+margin-bottom:15px;
+}
+
+.tool-info{
+display:flex;
+justify-content:space-between;
+align-items:center;
+margin:15px 0;
+}
+
+.rating{
+color:#ffd54f;
+font-weight:600;
+}
+
+.price{
+padding:5px 10px;
+border-radius:20px;
+font-size:12px;
+font-weight:bold;
+}
+
+.free{
+background:#16a34a;
+color:white;
+}
+
+.paid{
+background:#dc2626;
+color:white;
+                         }
