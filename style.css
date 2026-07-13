@@ -567,3 +567,10 @@ background:#58a6ff;
 color:#fff;
 transform:scale(1.05);
 }
+#resultCount{
+text-align:center;
+color:#58a6ff;
+font-size:16px;
+font-weight:600;
+margin:15px 0 25px;
+}
