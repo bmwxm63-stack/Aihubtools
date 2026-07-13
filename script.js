@@ -268,3 +268,20 @@ duration:200
 });
 
 });
+const resultCount = document.getElementById("resultCount");
+
+function updateCount() {
+  let visible = 0;
+
+  document.querySelectorAll(".card").forEach(card => {
+    if (card.style.display !== "none") {
+      visible++;
+    }
+  });
+
+  resultCount.textContent = visible + " AI Tools Found";
+}
+
+updateCount();
+
+search.addEventListener("keyup", updateCount);
