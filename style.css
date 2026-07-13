@@ -547,3 +547,23 @@ color:white;
 background:#dc2626;
 color:white;
                          }
+.card{
+transition:all .35s ease;
+cursor:pointer;
+}
+
+.card:hover{
+transform:translateY(-10px);
+box-shadow:0 20px 40px rgba(0,0,0,.35);
+border:1px solid #58a6ff;
+}
+
+.card button{
+transition:.3s;
+}
+
+.card:hover button{
+background:#58a6ff;
+color:#fff;
+transform:scale(1.05);
+}
