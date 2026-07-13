@@ -15,7 +15,7 @@ search.addEventListener("input", function () {
   });
 });
 
-// Card animation
+
 cards.forEach((card) => {
   card.addEventListener("mouseenter", () => {
     card.style.transform = "translateY(-12px) scale(1.03)";
