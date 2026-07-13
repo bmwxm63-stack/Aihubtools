@@ -312,3 +312,14 @@ updateCount();
 });
 
 });
+document.querySelectorAll(".fav-btn").forEach(btn=>{
+
+btn.addEventListener("click",(e)=>{
+
+e.stopPropagation();
+
+btn.textContent = btn.textContent==="🤍" ? "❤️" : "🤍";
+
+});
+
+});
