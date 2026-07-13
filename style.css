@@ -505,3 +505,12 @@ cursor:pointer;
 color:#58a6ff;
 transition:.3s;
   }
+#search{
+transition:.3s;
+}
+
+#search:focus{
+outline:none;
+box-shadow:0 0 25px rgba(88,166,255,.5);
+transform:scale(1.02);
+  }
