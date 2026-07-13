@@ -612,3 +612,26 @@ border-radius:8px;
 font-size:14px;
 color:#c9d1d9;
 }
+footer{
+margin-top:80px;
+padding:30px;
+text-align:center;
+border-top:1px solid #30363d;
+}
+
+.footer-links{
+margin-top:15px;
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+}
+
+.footer-links a{
+color:#58a6ff;
+text-decoration:none;
+}
+
+.footer-links a:hover{
+text-decoration:underline;
+}
