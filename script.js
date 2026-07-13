@@ -237,3 +237,19 @@ card.style.display="none";
 });
 
 });
+document.querySelectorAll(".tool-icon").forEach(icon=>{
+
+icon.addEventListener("mouseenter",()=>{
+
+icon.animate([
+{transform:"rotate(0deg)"},
+{transform:"rotate(10deg) scale(1.1)"},
+{transform:"rotate(-10deg) scale(1.1)"},
+{transform:"rotate(0deg)"}
+],{
+duration:500
+});
+
+});
+
+});
